@@ -9,6 +9,8 @@ Differences between this and `cargo new`:
 -   Description, repository, and license added to package information in cargo.toml
 -   Release profile modifications for slower compilation with smaller binary output
 
+**Note:** This template uses has my name hardcoded in. If you are reading this and are not me, you should not use this template and instead should be making a fork with your own values.
+
 ## License
 
 Licensed under the MIT license [LICENSE](LICENSE)
