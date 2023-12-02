@@ -1,10 +1,16 @@
-[placeholders.github-username]
-type = "string"
-prompt = "GitHub username"
+[template]
+# Required for include files conditionally
+cargo_generate_version = ">=0.10.0"
 
 [placeholders.project-description]
 type = "string"
-prompt = "Project description"
+prompt = "Project Description"
+
+[placeholders.year]
+type = "string"
+prompt = "Current Year"
+default = "2023"
+regex = "^[0-9]{4}$"
 
 [conditional.'crate_type == "lib"']
 ignore = ["src/main.rs"]
