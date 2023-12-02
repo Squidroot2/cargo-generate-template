@@ -1,3 +1,11 @@
+[placeholders.github-username]
+type = "string"
+prompt = "GitHub username"
+
+[placeholders.project-description]
+type = "string"
+prompt = "Project description"
+
 [conditional.'crate_type == "lib"']
 ignore = ["src/main.rs"]
 
