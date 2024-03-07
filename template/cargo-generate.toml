@@ -9,7 +9,7 @@ prompt = "Project Description"
 [placeholders.year]
 type = "string"
 prompt = "Current Year"
-default = "2023"
+default = "2024"
 regex = "^[0-9]{4}$"
 
 [conditional.'crate_type == "lib"']
