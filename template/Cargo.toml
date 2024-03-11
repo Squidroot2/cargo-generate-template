@@ -23,5 +23,3 @@ opt-level = 3
 {% endif %}
 [dependencies]
 {% if bevy %} bevy = { version = "0.13.0" } {% endif %}
-
-
