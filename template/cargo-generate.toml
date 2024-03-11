@@ -12,6 +12,11 @@ prompt = "Current Year"
 default = "2024"
 regex = "^[0-9]{4}$"
 
+[placeholders.bevy]
+type = "bool"
+prompt = "Add bevy with debug optimizations?"
+default = false
+
 [conditional.'crate_type == "lib"']
 ignore = ["src/main.rs"]
 
