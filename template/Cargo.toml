@@ -27,4 +27,3 @@ opt-level = 3
 { if bevy %}
 bevy = { version = "0.13.0" }
 {% endif %}
-

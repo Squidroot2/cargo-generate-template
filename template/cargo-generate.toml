@@ -13,7 +13,7 @@ default = "2024"
 regex = "^[0-9]{4}$"
 
 [placeholders.bevy]
-type = "boolean"
+type = "bool"
 prompt = "Add bevy with debug optimizations?"
 default = "n"
 choices = ["y","n"]
