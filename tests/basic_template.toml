@@ -1,0 +1,6 @@
+[values]
+project-description = "Example Description"
+year = 2024
+bevy = false
+crate_type = "bin"
+
