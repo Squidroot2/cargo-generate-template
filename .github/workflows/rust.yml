@@ -17,7 +17,7 @@ jobs:
         steps:
         - uses: actions/checkout@v4
         - name: Run Basic Test
-            run: cargo generate --template-values-file tests/basic_template.toml --test
+          run: cargo generate --template-values-file tests/basic_template.toml --test
         - name: Run bevy test
-            run: cargo generate --template-values-file tests/bevy_template.toml --test
+          run: cargo generate --template-values-file tests/bevy_template.toml --test
 
