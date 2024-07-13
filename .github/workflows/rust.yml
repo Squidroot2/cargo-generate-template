@@ -16,6 +16,8 @@ jobs:
 
         steps:
         - uses: actions/checkout@v4
+        - name: Install Cargo generate
+          run: cargo install generate --locked
         - name: Run Basic Test
           run: cargo generate --template-values-file tests/basic_template.toml --test
         - name: Run bevy test
