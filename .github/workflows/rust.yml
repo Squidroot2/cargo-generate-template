@@ -19,9 +19,9 @@ jobs:
         - name: Install Cargo generate
           run: cargo install cargo-generate
         - name: Set up Test environment
-          run: cd ~
+          run: mkdir test_dir && cd test_dir
         - name: Run Basic Test
-          run: cargo generate --template-values-file tests/basic_template.toml --test
+          run: cargo generate --template-values-file ../tests/basic_template.toml --test
         - name: Run bevy test
-          run: cargo generate --template-values-file tests/bevy_template.toml --test
+          run: cargo generate --template-values-file ../tests/bevy_template.toml --test
 
