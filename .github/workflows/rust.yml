@@ -18,6 +18,7 @@ jobs:
         - uses: actions/checkout@v4
         - name: Install Cargo generate
           run: cargo install --path .
+        - name: Set up Test environment
           run: cd ~
         - name: Run Basic Test
           run: cargo generate --template-values-file tests/basic_template.toml --test
