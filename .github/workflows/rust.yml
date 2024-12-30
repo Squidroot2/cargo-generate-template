@@ -1,25 +1,25 @@
 name: Rust
 
 on:
-    push:
-        branches: [ "main" ]
+  push:
+    branches: [ "main" ]
     pull_request:
-        branches: [ "main" ]
+      branches: [ "main" ]
 
 env:
-    CARGO_TERM_COLOR: always
-    RUSTFLAGS: "-Dwarnings"
+  CARGO_TERM_COLOR: always
+  RUSTFLAGS: "-Dwarnings"
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-        steps:
-        - uses: actions/checkout@v4
-        - name: Install Cargo generate
-          run: cargo install cargo-generate
-        - name: Run Basic Test
-          run: cargo generate --template-values-file tests/basic_template.toml --test
-        - name: Run bevy test
-          run: cargo generate --template-values-file tests/bevy_template.toml --test
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Cargo generate
+        run: cargo install cargo-generate
+      - name: Run Basic Test
+        run: cargo generate --values-file tests/basic_template.toml --vcs none --test
+      - name: Run bevy test
+        run: cargo generate --values-file tests/bevy_template.toml --vcs none --test
 

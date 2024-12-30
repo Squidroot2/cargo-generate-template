@@ -14,7 +14,7 @@ regex = "^[0-9]{4}$"
 
 [placeholders.bevy]
 type = "bool"
-prompt = "Add bevy with debug optimizations?"
+prompt = "Add bevy-recommended debug optimizations?"
 default = false
 
 [conditional.'crate_type == "lib"']
